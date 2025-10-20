@@ -113,7 +113,7 @@ export default function LoginPage() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://datanest-lkyu.onrender.com/api/v1/login', {
+      const response = await fetch('https://unlimiteddatamanfred.onrender.com/api/v1/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -187,7 +187,7 @@ export default function LoginPage() {
               <Database className="w-6 h-6 text-white" strokeWidth={2.5} />
             </div>
             <h1 className="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">
-              DataNest <span className="text-blue-600 dark:text-blue-500">GH</span>
+              UnlimitedData <span className="text-blue-600 dark:text-blue-500">GH</span>
             </h1>
           </div>
           <h2 className="text-lg font-semibold text-slate-600 dark:text-slate-400">Sign in to your account</h2>
@@ -316,7 +316,7 @@ export default function LoginPage() {
                 <div className="w-full border-t border-slate-300 dark:border-slate-600" />
               </div>
               <div className="relative flex justify-center text-sm">
-                <span className="px-3 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">New to DataNest GH?</span>
+                <span className="px-3 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-medium">New to Unlimited Data GH?</span>
               </div>
             </div>
 
@@ -358,7 +358,7 @@ export default function LoginPage() {
 
         <div className="mt-8 text-center">
           <p className="text-xs text-slate-500 dark:text-slate-400 font-medium">
-            © 2025 DataNest GH. All rights reserved.
+            © 2025 UnlimitedData GH. All rights reserved.
           </p>
         </div>
       </div>

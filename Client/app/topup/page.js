@@ -73,7 +73,7 @@ export default function DepositPage() {
     setSuccess('');
     
     try {
-      const response = await fetch('https://Unlimited Data-lkyu.onrender.com/api/v1/deposit', {
+      const response = await fetch('https://unlimiteddatamanfred.onrender.com /api/v1/deposit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

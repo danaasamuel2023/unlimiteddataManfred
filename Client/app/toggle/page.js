@@ -40,7 +40,7 @@ export default function InventoryPage() {
     try {
       setLoading(true);
       const response = await axios.get(
-        'https://datahustle.onrender.com/api/inventory',
+        'https://unlimiteddatamanfred.onrender.com/api/inventory',
         {
           headers: {
             'x-auth-token': token

@@ -472,7 +472,7 @@ export default function SignupPage() {
             </div>
             <div className="text-xs text-slate-600 dark:text-slate-400">
               <p className="font-bold text-sm mb-2 text-slate-900 dark:text-white">Your Information is Safe</p>
-              <p className="font-medium leading-relaxed">By creating an account, you agree to our Terms of Service and Privacy Policy. We take your privacy seriously and will never share your information without your consent.</p>
+              <p className="font-medium leading-relaxed">By creating ann account, you agree to our Terms of Service and Privacy Policy. We take your privacy seriously and will never share your information without your consent.</p>
             </div>
           </div>
         </div>

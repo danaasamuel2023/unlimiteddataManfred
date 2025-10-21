@@ -10,7 +10,7 @@ dotenv.config();
 
 // ========== DATAMART API CONFIGURATION ==========
 const DATAMART_BASE_URL = 'https://api.datamartgh.shop';
-const DATAMART_API_KEY = process.env.DATAMART_API_KEY || 'f3d158934310f9c63f3f1b68f2f1ecda916ffada9ea984740c4f3902250f534d';
+const DATAMART_API_KEY = process.env.DATAMART_API_KEY || 'c87306546ef80e22af5935cd8828694a9ad5590609822a2e8bb201ad92521dca';
 
 // Create DataMart client
 const datamartClient = axios.create({
@@ -36,7 +36,7 @@ const geonetClient = axios.create({
 
 // ========== TELECEL API CONFIGURATION ==========
 const TELECEL_API_URL = 'https://iget.onrender.com/api/developer/orders/place';
-const TELECEL_API_KEY = 'c87306546ef80e22af5935cd8828694a9ad5590609822a2e8bb201ad92521dca';
+const TELECEL_API_KEY = '76013fa9c8bf774ac7fb35db5e586fb7852a618cbf57b9ddb072fc2c465e5fe8';
 
 // Enhanced logging function
 const logOperation = (operation, data) => {

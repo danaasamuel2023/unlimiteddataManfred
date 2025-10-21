@@ -31,14 +31,14 @@ const Footer = () => {
                   className="flex items-center text-slate-400 hover:text-white transition-colors text-sm group"
                 >
                   <Mail className="w-4 h-4 mr-2.5 text-blue-500 group-hover:text-blue-400" strokeWidth={2} />
-                  support@unlimiteddatagh.com
+                  unlimiteddatagh@gmail.com
                 </a>
                 <a 
                   href="tel:+233 54 404 1482" 
                   className="flex items-center text-slate-400 hover:text-white transition-colors text-sm group"
                 >
                   <Phone className="w-4 h-4 mr-2.5 text-blue-500 group-hover:text-blue-400" strokeWidth={2} />
-                    +233 54 404 1482                </a>
+                    +233 50 327 6136                </a>
                 <div className="flex items-start text-slate-400 text-sm">
                   <MapPin className="w-4 h-4 mr-2.5 mt-0.5 text-blue-500 flex-shrink-0" strokeWidth={2} />
                   <span>Accra, Ghana</span>

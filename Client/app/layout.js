@@ -26,14 +26,14 @@ export const metadata = {
   openGraph: {
     title: " | Ghana's Premier Data Marketplace",
     description: "Connect with data resellers across Ghana. Buy and sell client data securely on our trusted platform.",
-    url: "https://www.datanestgh.com",
-    siteName: "DATAHUSTLE", 
+    url: "https://www.unlimiteddatagh.com/",
+    siteName: "Unlimiteddatagh", 
     images: [
       {
         url: "/component/datamart-logo.svg",
         width: 1200,
         height: 630,
-        alt: "DataHistle - Ghana's Data Marketplace",
+        alt: "Unlimiteddatagh - Ghana's Data Marketplace",
       },
     ],
     locale: "en_GH",
@@ -46,13 +46,13 @@ export const metadata = {
     images: ["/images/datamart-twitter.jpg"],
   },
   alternates: {
-    canonical: "https://www.datanestgh.shop/",
+    canonical: "https://www.unlimiteddatagh.com/",
   },
   robots: {
     index: true,
     follow: true,
   },
-  metadataBase: new URL("https://www.datanestgh.shop"),
+  metadataBase: new URL("https://www.unlimiteddatagh.com"),
 };
 
 export default function RootLayout({ children }) {

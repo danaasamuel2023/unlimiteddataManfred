@@ -68,7 +68,7 @@ router.post('/deposit', async (req, res) => {
         amount: paystackAmount, // Convert to pesewas (smallest currency unit for GHS)
         currency: 'GHS',
         reference,
-        callback_url: `https://www.datanestgh.com/payment/callback?reference=${reference}`
+        callback_url: `https://www.unlimiteddatagh.com/payment/callback?reference=${reference}`
       },
       {
         headers: {

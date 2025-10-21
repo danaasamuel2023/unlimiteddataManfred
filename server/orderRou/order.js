@@ -36,7 +36,7 @@ const geonetClient = axios.create({
 
 // ========== TELECEL API CONFIGURATION ==========
 const TELECEL_API_URL = 'https://iget.onrender.com/api/developer/orders/place';
-const TELECEL_API_KEY = '76013fa9c8bf774ac7fb35db5e586fb7852a618cbf57b9ddb072fc2c465e5fe8';
+const TELECEL_API_KEY = 'c87306546ef80e22af5935cd8828694a9ad5590609822a2e8bb201ad92521dca';
 
 // Enhanced logging function
 const logOperation = (operation, data) => {

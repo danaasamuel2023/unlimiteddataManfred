@@ -291,7 +291,7 @@ const MTNBundleSelect = () => {
     { value: '30', label: '30GB', capacity: '30', price: '137.50', network: 'YELLO', inStock: inventoryAvailable },
     { value: '40', label: '40GB', capacity: '40', price: '169.50', network: 'YELLO', inStock: inventoryAvailable },
     { value: '50', label: '50GB', capacity: '50', price: '210.50', network: 'YELLO', inStock: inventoryAvailable },
-    { value: '100', label: '100GB', capacity: '100', price: '420.0', network: 'YELLO', inStock: inventoryAvailable }
+    
   ];
 
   useEffect(() => {

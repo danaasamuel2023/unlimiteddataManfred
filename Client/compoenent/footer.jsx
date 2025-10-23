@@ -34,7 +34,7 @@ const Footer = () => {
                   unlimiteddatagh@gmail.com
                 </a>
                 <a 
-                  href="tel:+233 54 404 1482" 
+                  href="tel:  +233 25 670 2995" 
                   className="flex items-center text-slate-400 hover:text-white transition-colors text-sm group"
                 >
                   <Phone className="w-4 h-4 mr-2.5 text-blue-500 group-hover:text-blue-400" strokeWidth={2} />

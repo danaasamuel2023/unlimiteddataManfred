@@ -91,7 +91,7 @@ const DataPurchaseSchema = new mongoose.Schema({
   processing: { type: Boolean, default: false },
   // Add these fields for admin notes and update tracking
   adminNotes: { type: String },
-  updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "Usernestdata" },
+  updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "UserUNLIMITEDDATA" },
   updatedAt: { type: Date },
   createdAt: { type: Date, default: Date.now }
  
@@ -100,7 +100,7 @@ const DataPurchaseSchema = new mongoose.Schema({
 const TransactionSchema = new mongoose.Schema({
   userId: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Usernestdata',
+    ref: 'UserUNLIMITEDDATA',
     required: true
   },
   type: {
@@ -144,8 +144,8 @@ const TransactionSchema = new mongoose.Schema({
 
 // Updated ReferralBonus Schema to include friend registration type
 const ReferralBonusSchema = new mongoose.Schema({
-  userId: { type: mongoose.Schema.Types.ObjectId, ref: "Usernestdata", required: true }, 
-  referredUserId: { type: mongoose.Schema.Types.ObjectId, ref: "Usernestdata", required: true }, 
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "UserUNLIMITEDDATA", required: true }, 
+  referredUserId: { type: mongoose.Schema.Types.ObjectId, ref: "UserUNLIMITEDDATA", required: true }, 
   amount: { type: Number, required: true }, 
   status: { type: String, enum: ["pending", "credited"], default: "pending" },
   // Added registration type field to track how the user was referred
@@ -165,7 +165,7 @@ const Schema = mongoose.Schema;
 const apiKeySchema = new Schema({
     userId: {
         type: Schema.Types.ObjectId,
-        ref: 'Usernestdata',
+        ref: 'UserUNLIMITEDDATA',
         required: true
     },
     key: {
@@ -201,7 +201,7 @@ apiKeySchema.index({ userId: 1 });
 const OrderReportSchema = new mongoose.Schema({
   userId: { 
     type: mongoose.Schema.Types.ObjectId, 
-    ref: "Usernestdata", 
+    ref: "UserUNLIMITEDDATA", 
     required: true 
   },
   purchaseId: { 
@@ -241,12 +241,12 @@ OrderReportSchema.index({ purchaseId: 1 });
 OrderReportSchema.index({ status: 1 });
 
 // Export all models
-const User = mongoose.model("Usernestdata", UserSchema);
-const DataPurchase = mongoose.model("DataPurchasenestdata", DataPurchaseSchema);
-const Transaction = mongoose.model("Transactionnestdata", TransactionSchema);
-const ReferralBonus = mongoose.model("ReferralBonusnestdata", ReferralBonusSchema);
+const User = mongoose.model("UserUNLIMITEDDATA", UserSchema);
+const DataPurchase = mongoose.model("DataPurchaseUNLIMITEDDATA", DataPurchaseSchema);
+const Transaction = mongoose.model("TransactionUNLIMITEDDATA", TransactionSchema);
+const ReferralBonus = mongoose.model("ReferralBonusUNLIMITEDDATA", ReferralBonusSchema);
 const ApiKey = mongoose.model('ApiKeydatahusle', apiKeySchema);
-const DataInventory = mongoose.model("DataInventorynestdata", DataInventorySchema);
+const DataInventory = mongoose.model("DataInventoryUNLIMITEDDATA", DataInventorySchema);
 const OrderReport = mongoose.model("OrderReporthustle", OrderReportSchema);
 
 module.exports = { User, DataPurchase, Transaction, ReferralBonus, ApiKey, DataInventory, OrderReport };

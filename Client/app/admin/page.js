@@ -88,7 +88,7 @@ const AdminUsers = () => {
       }
       
       const response = await axios.get(
-        `https://datanest-lkyu.onrender.com/api/users?page=${page}&search=${search}`,
+        `https://unlimiteddatamanfred.onrender.com/api/users?page=${page}&search=${search}`,
         {
           headers: {
             'x-auth-token': token
@@ -180,7 +180,7 @@ const AdminUsers = () => {
       const token = localStorage.getItem('authToken');
       
       const response = await axios.get(
-        `https://datanest-lkyu.onrender.com/api/transactions?userId=${userId}`,
+        `https://unlimiteddatamanfred.onrender.com/api/transactions?userId=${userId}`,
         {
           headers: {
             'x-auth-token': token
@@ -216,7 +216,7 @@ const AdminUsers = () => {
       const token = localStorage.getItem('authToken');
       
       const response = await axios.put(
-        `https://datanest-lkyu.onrender.com/api/users/${selectedUser._id}/add-money`,
+        `https://unlimiteddatamanfred.onrender.com/api/users/${selectedUser._id}/add-money`,
         { amount: parseFloat(amountToAdd) },
         {
           headers: {
@@ -256,7 +256,7 @@ const AdminUsers = () => {
       const token = localStorage.getItem('authToken');
       
       const response = await axios.put(
-        `https://datanest-lkyu.onrender.com/api/users/${selectedUser._id}/deduct-money`,
+        `https://unlimiteddatamanfred.onrender.com/api/users/${selectedUser._id}/deduct-money`,
         { 
           amount: parseFloat(amountToDeduct),
           reason: deductionReason 
@@ -299,7 +299,7 @@ const AdminUsers = () => {
       const token = localStorage.getItem('authToken');
       
       const response = await axios.put(
-        `https://datanest-lkyu.onrender.com/api/users/${selectedUser._id}/toggle-status`,
+        `https://unlimiteddatamanfred.onrender.com/api/users/${selectedUser._id}/toggle-status`,
         { disableReason },
         {
           headers: {
@@ -334,7 +334,7 @@ const AdminUsers = () => {
       setProcessingAction(true);
       const token = localStorage.getItem('authToken');
       
-      await axios.delete(`https://datanest-lkyu.onrender.com/api/users/${selectedUser._id}`, {
+      await axios.delete(`https://unlimiteddatamanfred.onrender.com/api/users/${selectedUser._id}`, {
         headers: {
           'x-auth-token': token
         }

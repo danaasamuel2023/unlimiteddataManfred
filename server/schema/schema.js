@@ -78,7 +78,7 @@ UserSchema.index({ approvalStatus: 1 });
 
 // Other schemas remain the same...
 const DataPurchaseSchema = new mongoose.Schema({
-  userId: { type: mongoose.Schema.Types.ObjectId, ref: "Userunlimiteddata", required: true }, 
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: "UserUNLIMITEDDATA", required: true }, 
   phoneNumber: { type: String, required: true }, 
   network: { type: String, enum: ["YELLO", "TELECEL", "AT_PREMIUM","airteltigo","at"], required: true },
   capacity: { type: Number, required: true }, 

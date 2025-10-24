@@ -88,7 +88,7 @@ const AdminOrders = () => {
 
       try {
         // Update API call to include pagination params
-        const res = await fetch(`https://datahustle.onrender.com/api/orders?page=${currentPage}&limit=${ordersPerPage}`, {
+        const res = await fetch(`https://unlimiteddatamanfred.onrender.com/api/orders?page=${currentPage}&limit=${ordersPerPage}`, {
           headers: {
             'x-auth-token': authToken
           }
@@ -171,7 +171,7 @@ const AdminOrders = () => {
     }
 
     try {
-      const res = await fetch(`https://datahustle.onrender.com/api/orders/${orderId}/status`, {
+      const res = await fetch(`https://unlimiteddatamanfred.onrender.com/api/orders/${orderId}/status`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -228,7 +228,7 @@ const AdminOrders = () => {
       // Process updates one by one to better handle errors
       for (const orderId of selectedOrders) {
         try {
-          const res = await fetch(`https://datahustle.onrender.com/api/orders/${orderId}/status`, {
+          const res = await fetch(`https://unlimiteddatamanfred.onrender.com/api/orders/${orderId}/status`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",
@@ -382,7 +382,7 @@ const AdminOrders = () => {
       while (hasMoreData) {
         updateProgress(Math.min((currentPage * 5), 95), `Fetching data batch ${currentPage}...`);
         
-        const res = await fetch(`https://datahustle.onrender.com/api/orders?page=${currentPage}&limit=${batchSize}`, {
+        const res = await fetch(`https://unlimiteddatamanfred.onrender.com/api/orders?page=${currentPage}&limit=${batchSize}`, {
           headers: {
             'x-auth-token': authToken
           }

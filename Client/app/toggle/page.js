@@ -79,7 +79,7 @@ export default function InventoryPage() {
       setError(null);
       
       const response = await axios.put(
-        `https://datahustle.onrender.com/api/inventory/${network}/toggle`, 
+        `https://unlimiteddatamanfred.onrender.com/api/inventory/${network}/toggle`, 
         {}, // empty body
         getAuthHeaders() // pass the auth headers
       );
@@ -122,7 +122,7 @@ export default function InventoryPage() {
       setError(null);
       
       const response = await axios.put(
-        `https://datahustle.onrender.com/api/inventory/${network}/toggle-geonettech`, 
+        `https://unlimiteddatamanfred.onrender.com/api/inventory/${network}/toggle-geonettech`, 
         {}, // empty body
         getAuthHeaders() // pass the auth headers
       );

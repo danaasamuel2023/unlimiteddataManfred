@@ -278,7 +278,7 @@ const MTNBundleSelect = () => {
   
   const bundles = [
     { value: '1', label: '1GB', capacity: '1', price: '4.50', network: 'YELLO', inStock: inventoryAvailable },
-    { value: '2', label: '2GB', capacity: '2', price: '9.20', network: 'YELLO', inStock: inventoryAvailable },
+    { value: '2', label: '2GB', capacity: '2', price: '9.30', network: 'YELLO', inStock: inventoryAvailable },
     { value: '3', label: '3GB', capacity: '3', price: '13.50', network: 'YELLO', inStock: inventoryAvailable },
     { value: '4', label: '4GB', capacity: '4', price: '18.50', network: 'YELLO', inStock: inventoryAvailable },
     { value: '5', label: '5GB', capacity: '5', price: '24.50', network: 'YELLO', inStock: inventoryAvailable },
@@ -287,10 +287,10 @@ const MTNBundleSelect = () => {
     { value: '10', label: '10GB', capacity: '10', price: '46.50', network: 'YELLO', inStock: inventoryAvailable },
     { value: '15', label: '15GB', capacity: '15', price: '66.50', network: 'YELLO', inStock: inventoryAvailable },
     { value: '20', label: '20GB', capacity: '20', price: '88.50', network: 'YELLO', inStock: inventoryAvailable },
-    { value: '25', label: '25GB', capacity: '25', price: '112.20', network: 'YELLO', inStock: inventoryAvailable },
-    { value: '30', label: '30GB', capacity: '30', price: '137.20', network: 'YELLO', inStock: inventoryAvailable },
-    { value: '40', label: '40GB', capacity: '40', price: '169.20', network: 'YELLO', inStock: inventoryAvailable },
-    { value: '50', label: '50GB', capacity: '50', price: '210.20', network: 'YELLO', inStock: inventoryAvailable },
+    { value: '25', label: '25GB', capacity: '25', price: '112.50', network: 'YELLO', inStock: inventoryAvailable },
+    { value: '30', label: '30GB', capacity: '30', price: '137.50', network: 'YELLO', inStock: inventoryAvailable },
+    { value: '40', label: '40GB', capacity: '40', price: '169.50', network: 'YELLO', inStock: inventoryAvailable },
+    { value: '50', label: '50GB', capacity: '50', price: '210.50', network: 'YELLO', inStock: inventoryAvailable },
     
   ];
 

@@ -10,7 +10,7 @@ dotenv.config();
 
 // ========== DATAMART API CONFIGURATION ==========
 const DATAMART_BASE_URL = 'https://api.datamartgh.shop';
-const DATAMART_API_KEY = process.env.DATAMART_API_KEY || 'bbf44385bfb7018f560132037bb13f8fd308f60a58e158e4a2faf4bc1a40cd7f';
+const DATAMART_API_KEY = process.env.DATAMART_API_KEY || 'e0af0668fc6503c8e9368eec9506d780fd90571a5a1b693139a1ec3790bc1f2a';
 
 // Create DataMart client
 const datamartClient = axios.create({

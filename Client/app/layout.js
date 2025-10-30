@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Datanest gh | Data Marketplace",
+  title: "unlimiteddata gh | Data Marketplace",
   description: "The leading platform for data resellers in Ghana to buy and sell client data securely and efficiently.",
   keywords: "data marketplace, Ghana, data resellers, buy data, sell data, client data, Ghana data market",
   verification: {

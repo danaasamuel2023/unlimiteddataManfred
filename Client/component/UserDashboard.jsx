@@ -72,7 +72,7 @@ const DashboardPage = () => {
       try {
         console.log(`🔍 Checking ${network.key.toUpperCase()} inventory...`);
         
-        const response = await fetch(`https://api.datamartgh.shop/api/inventory/check/${network.apiName}`);
+        const response = await fetch(`/api/proxy/inventory/check/${network.apiName}`);
         const data = await response.json();
         
         if (data.status === 'success') {
